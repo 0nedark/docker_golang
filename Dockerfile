@@ -1,4 +1,4 @@
-FROM golang:1.10.3-alpine3.8-v1.1.0
+FROM golang:1.10.3-alpine3.8
 
 LABEL maintainer=dovydas.rupsys@cryptohaven.com
 
