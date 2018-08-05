@@ -1,4 +1,4 @@
-FROM golang:1.10.3-alpine3.8
+FROM golang:1.10.3-alpine3.8-v1.1.0
 
 LABEL maintainer=dovydas.rupsys@cryptohaven.com
 
@@ -6,6 +6,7 @@ LABEL maintainer=dovydas.rupsys@cryptohaven.com
 RUN apk add --update curl git && rm -rf /var/cache/apk/*
 RUN curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 RUN go get github.com/cespare/reflex
+RUN go get github.com/0nedark/shape
 
 # Setup entrypoint
 COPY entrypoint.sh /entrypoint.sh
