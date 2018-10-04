@@ -6,7 +6,7 @@
     {
       "label": "build container",
       "type": "shell",
-      "command": "docker build -t drupsys/golang-alpine1.10.3:1.1.1 .",
+      "command": "docker build -t drupsys/golang-alpine1.11 .",
       "group": {
         "kind": "build",
         "isDefault": true
